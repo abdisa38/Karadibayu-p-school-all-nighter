@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Calendar, ShieldCheck, Activity, Bell } from 'lucide-react';
+import { Menu, Calendar, Bell } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext.js';
 
 interface TopNavProps {

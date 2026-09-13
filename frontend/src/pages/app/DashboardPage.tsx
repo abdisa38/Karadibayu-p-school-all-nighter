@@ -4,13 +4,7 @@ import {
   Server,
   Database,
   Calendar,
-  ShieldCheck,
-  Activity,
-  Layers,
-  CheckCircle2,
   Clock,
-  AlertCircle,
-  ExternalLink,
 } from 'lucide-react';
 import { PageHeader } from '../../components/layout/PageHeader.js';
 import { Badge } from '../../components/common/Badge.js';
@@ -32,7 +26,7 @@ interface ModuleManifestItem {
 }
 
 export const DashboardPage: React.FC = () => {
-  const { success, info, warning } = useToast();
+  const { success, info } = useToast();
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const [isConfirmOpen, setIsConfirmOpen] = useState(false);
   const [isSimulatingAction, setIsSimulatingAction] = useState(false);
@@ -41,8 +35,6 @@ export const DashboardPage: React.FC = () => {
   const {
     data: healthResponse,
     isLoading: isHealthLoading,
-    error: healthError,
-    refetch: refetchHealth,
   } = useQuery<ApiResponseEnvelope<SystemHealthData>>({
     queryKey: ['system-health-dashboard'],
     queryFn: async () => {
