@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { AppLayout } from '../components/layout/AppLayout.js';
 import { LandingPage } from '../pages/public/LandingPage.js';
 import { LoginPage } from '../pages/public/LoginPage.js';
@@ -12,7 +12,7 @@ import { LoadingSpinner } from '../components/common/LoadingSpinner.js';
 
 // Route Guard for Protected Routes
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { isAuthenticated, isLoading } = useAuth();
+  const { isLoading } = useAuth();
 
   if (isLoading) {
     return (

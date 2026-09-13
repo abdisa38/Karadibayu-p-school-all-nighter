@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Construction, ArrowLeft, Calendar, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Construction, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { PageHeader } from '../../components/layout/PageHeader.js';
 import { Badge } from '../../components/common/Badge.js';
 import { Button } from '../../components/common/Button.js';
