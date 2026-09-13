@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand-primary: #0f294a;
+  --color-brand-secondary: #1a4277;
+  --color-accent-teal: #0f766e;
+  --color-accent-gold: #d97706;
+  --color-bg-canvas: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-border-subtle: #e2e8f0;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-50 text-surface-900 font-sans antialiased min-h-screen selection:bg-brand-100 selection:text-brand-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-surface-900 font-semibold tracking-tight;
+  }
+}
+
+/* Institutional custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Restrained focus ring */
+*:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 2px;
+}

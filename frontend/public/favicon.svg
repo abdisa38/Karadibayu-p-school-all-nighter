@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="20" fill="#0f294a"/>
+  <!-- Rising Sun Rays -->
+  <path d="M50 20 L50 12 M35 25 L29 18 M65 25 L71 18 M23 37 L15 34 M77 37 L85 34" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="50" cy="38" r="12" fill="#d97706"/>
+  <!-- Open Book Symbol -->
+  <path d="M50 48 C42 42 24 43 20 48 L20 74 C25 69 41 68 50 74 C59 68 75 69 80 74 L80 48 C76 43 58 42 50 48 Z" fill="#ffffff" stroke="#0f766e" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Spine Line -->
+  <line x1="50" y1="48" x2="50" y2="74" stroke="#0f766e" stroke-width="2.5"/>
+</svg>
